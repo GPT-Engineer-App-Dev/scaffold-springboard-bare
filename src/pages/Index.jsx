@@ -1,8 +1,12 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
 const Index = () => {
+  useEffect(() => {
+    throw new Error("This is a test error thrown on component mount");
+  }, []);
+
   const [inputValue, setInputValue] = useState('');
 
   return (
