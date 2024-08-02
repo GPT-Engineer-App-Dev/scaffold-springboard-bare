@@ -7,7 +7,6 @@ import { navItems } from "./nav-items";
 const queryClient = new QueryClient();
 
 const App = () => {
-  throw new Error("This is a test runtime error");
   return (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
