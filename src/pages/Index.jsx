@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 
 const Index = () => {
   useEffect(() => {
-    console.log("Index component mounted");
+    throw new Error("This is a test error thrown on component mount");
   }, []);
 
   const [inputValue, setInputValue] = useState('');
